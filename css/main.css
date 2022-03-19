@@ -1,4 +1,5 @@
 
+
 :root{
     --main-color:#007aff;
 }
@@ -21,10 +22,18 @@ h1,h2,h3,h4,h5,h6{
    position: fixed;
    bottom: 15px;
    right: 15px;
+   display: -webkit-box;
+   display: -ms-flexbox;
    display: flex;
-   justify-content: center;
-   align-items: center;
+   -webkit-box-pack: center;
+       -ms-flex-pack: center;
+           justify-content: center;
+   -webkit-box-align: center;
+       -ms-flex-align: center;
+           align-items: center;
    z-index: 995;
+   -webkit-transition: all .2s ease-in;
+   -o-transition: all .2s ease-in;
    transition: all .2s ease-in;
    cursor: pointer;
 }
@@ -47,11 +56,56 @@ header{
 }
 header h2::after{
     content:'|';
-    animation-name: typing;
-    animation-duration: 8s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-delay: 1s;
+    -webkit-animation-name: typing;
+            animation-name: typing;
+    -webkit-animation-duration: 8s;
+            animation-duration: 8s;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+}
+@-webkit-keyframes typing {
+    0%{content:"D|"}
+    2%{content:"De|"}
+    4%{content:"Dev|"}
+    6%{content:"Deve|"}
+    8%{content:"Devel|"}
+    10%{content:"Develo|"}
+    12%{content:"Develop|"}
+    14%{content:"Develope|"}
+    16%{content:"Developer|"}
+    18%{content:"Develop|"}
+    20%{content:"Develo|"}
+    22%{content:"Devel|"}
+    24%{content:"Deve|"}
+    26%{content:"Dev|"}
+    28%{content:"De|"}
+    30%{content:"D|"}
+    32%{content:"|"}
+    34%{content:"F|"}
+    36%{content:"Fr|"}
+    38%{content:"Fre|"}
+    40%{content:"Free|"}
+    42%{content:"Freel|"}
+    44%{content:"Freela|"}
+    46%{content:"Freelan|"}
+    48%{content:"Freelanc|"}
+    50%{content:"Freelance|"}
+    52%{content:"Freelancer|"}
+    54%{content:"Freelance|"}
+    56%{content:"Freelanc|"}
+    58%{content:"Freelan|"}
+    60%{content:"Freela|"}
+    62%{content:"Freel|"}
+    64%{content:"Free|"}
+    66%{content:"Fre|"}
+    68%{content:"Fr|"}
+    70%{content:"F|"}
+    72%{content:"|"}
+    100%{content:"|"}
 }
 @keyframes typing {
     0%{content:"D|"}
@@ -130,6 +184,8 @@ nav{
     position: absolute;
     bottom: 0;
     left:7px;
+    -webkit-transition: all 0.4s ease-in;
+    -o-transition: all 0.4s ease-in;
     transition: all 0.4s ease-in;
     height: 2px;
     background-color: #fff;
@@ -146,6 +202,8 @@ nav{
 .dropdown-item{
     font-size: 14px;
     padding: .5rem 1rem;
+    -webkit-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
     transition: all .2s ease-in;
 }
 .dropdown-item:hover{
@@ -164,7 +222,8 @@ nav{
 
 .main-row{
     background-color: #fff;
-    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2); 
+    -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+            box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2); 
 
 }
 .skill-h{
@@ -203,7 +262,8 @@ nav{
 .services .content{
     background-color: #fff;
     border-radius: 15px;
-    box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
 }
 .services h3{
     font-size: 22px;
@@ -219,7 +279,9 @@ nav{
     background-color: var(--main-color);
     bottom: 0;
     left: 50%;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
 }
 
 .icons-container{
@@ -228,9 +290,17 @@ nav{
     margin: auto;
     border-radius: 50%;
     border: 9px solid var(--main-color);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transition: all 0.4s ease-in;
+    -o-transition: all 0.4s ease-in;
     transition: all 0.4s ease-in;
 }
 .icons-container:hover{
@@ -273,9 +343,15 @@ nav{
     border: 8px solid #cde1f8;
     margin: auto;
     border-radius: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 6px;
 }
 .icons-section span{
@@ -297,7 +373,8 @@ nav{
 
 .portfolio-details{
     overflow: hidden;
-    box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
 }
 .portfolio-details h5{
     font-size: 1.2rem;
@@ -321,19 +398,29 @@ nav{
     width: 40px;
     border: 3px solid var(--main-color);
     border-radius: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     cursor: pointer;
     margin-left: auto;
     
 }
 .portfolio-details img{
     width: 100%;
+    -webkit-transition: all .5s ease-in;
+    -o-transition: all .5s ease-in;
     transition: all .5s ease-in;
 }
 .portfolio-details img:hover{
-    transform: scale(1.3,1.3);
+    -webkit-transform: scale(1.3,1.3);
+        -ms-transform: scale(1.3,1.3);
+            transform: scale(1.3,1.3);
     cursor: pointer;
 }
 
@@ -365,7 +452,10 @@ nav{
     font-size: 22px;
 }
 
-
+.second-img{
+    width: 150px;
+    height: 150px;
+}
 
 
 
@@ -378,18 +468,23 @@ width: 100%;
 .first-spn {
     background-color: var(--main-color);
     margin: auto;
+    width: -webkit-max-content;
+    width: -moz-max-content;
     width: max-content;
     padding: 7px 12px;
     border-radius: 4px;
     margin-bottom: 5px;
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
     color: #fff;
     font-size: 11px;
     font-weight: 500;
     letter-spacing: 0.03em;
 }
 .blog-details{
-    box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
     border: 1px solid rgba(0,0,0,.125);
 }
 
@@ -402,6 +497,10 @@ width: 100%;
     border-top: 1px solid rgba(0,0,0,.125);
 }
 .blog-details .last-section :first-child a{
+ 
+    -webkit-transition: all .4s ease-in;
+ 
+    -o-transition: all .4s ease-in;
  
     transition: all .4s ease-in;
 }
@@ -423,7 +522,8 @@ width: 100%;
 background-image: url(../images/overlay-bg.jpg);
 background-position: center center;
 background-size: cover;
-box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+-webkit-box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
 }
 .contact-section .layer{
 background-color: rgba(0, 120, 255, 0.7);
@@ -438,7 +538,10 @@ background-color: rgba(0, 120, 255, 0.7);
 }
 .contact-section button:hover{
     background: #3393ff;
-    box-shadow: 0 0 0 4px #cde1f8;
+    -webkit-box-shadow: 0 0 0 4px #cde1f8;
+            box-shadow: 0 0 0 4px #cde1f8;
+    -webkit-transition: all 0.4s ease-in;
+    -o-transition: all 0.4s ease-in;
     transition: all 0.4s ease-in;
 
 }
@@ -475,6 +578,8 @@ background-color: rgba(0, 120, 255, 0.7);
     padding: 6px;
     height: 45px;
     width: 45px;
+    -webkit-transition: all 0.4s ease-in;
+    -o-transition: all 0.4s ease-in;
     transition: all 0.4s ease-in;
     color: #1e1e1e;
     text-align: center;
@@ -598,7 +703,10 @@ background-color: rgba(0, 120, 255, 0.7);
 
     /* blog  */
 .blog-details .last-section{
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     /* align-items: center; */
     gap: 8px;
 }
