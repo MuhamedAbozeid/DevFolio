@@ -4,6 +4,9 @@ let home = document.getElementById('home')
 
 let topIcon = document.querySelector('.fixed-icon')
 
+// topIcon.style.cssText = 'display: none'
+
+
 window.onscroll = () => {
 
     if(window.scrollY >=  (home.scrollHeight-1) ){
@@ -15,7 +18,7 @@ window.onscroll = () => {
     }
 
     if(window.scrollY > 50){
-        topIcon.style.cssText = 'display: flex'
+        topIcon.style.cssText = 'display: -webkit-box; display: -ms-flexbox; display: flex;'
 
     }
     else{
